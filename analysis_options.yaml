@@ -1,0 +1,22 @@
+# include: package:lint/analysis_options.yaml
+
+# # Override for rules defined here https://github.com/passsy/dart-lint/blob/master/lib/analysis_options.yaml
+# analyzer:
+#   exclude:
+#     - build/**
+#     - lib/api
+#   errors:
+#     missing_return: warning
+#     todo: warning
+
+# linter:
+#   rules:
+#     prefer_single_quotes: true
+#     avoid_function_literals_in_foreach_calls: false
+#     avoid_positional_boolean_parameters: false
+#     avoid_void_async: false
+#     avoid_classes_with_only_static_members: false
+#     invalid_assignment: false
+#     curly_braces_in_flow_control_structures: false
+#     avoid_bool_literals_in_conditional_expressions: false
+#     prefer_function_declarations_over_variables: false

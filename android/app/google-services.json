@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "393762323265",
+    "project_id": "tlf-net",
+    "storage_bucket": "tlf-net.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393762323265:android:4bbf94c01176f54e5cffc0",
+        "android_client_info": {
+          "package_name": "com.tlfnet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393762323265-71f0slh6psnjudniujg2gl9fmc34kfmm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg0Lu1X-ClpZ6-P0rdoHu-SZGHV0jZuNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393762323265-71f0slh6psnjudniujg2gl9fmc34kfmm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
