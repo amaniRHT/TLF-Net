@@ -20,7 +20,7 @@ cd ..
 git clone -b beta https://github.com/flutter/flutter.git
 export PATH=`pwd`/flutter/bin:$PATH
 
-flutter channel master
+flutter channel stable
 flutter doctor
 flutter pub get
 
