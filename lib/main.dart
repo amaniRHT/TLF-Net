@@ -1,9 +1,13 @@
+import 'package:appcenter/appcenter.dart';
+import 'package:appcenter_analytics/appcenter_analytics.dart';
+import 'package:appcenter_crashes/appcenter_crashes.dart';
 import 'package:e_loan_mobile/api/services/services.dart';
 import 'package:e_loan_mobile/app/controllers.dart';
 import 'package:e_loan_mobile/config/config.dart';
 import 'package:e_loan_mobile/config/env/tlf_environnments.dart';
 import 'package:e_loan_mobile/routes/routing.dart';
 import 'package:e_loan_mobile/widgets/menu.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -19,6 +23,12 @@ void main() async {
   await GetStorage.init();
 
   await setupFirebaseRequirements();
+
+  final ios = defaultTargetPlatform == TargetPlatform.iOS;
+
+  var app_secret = ios ? "iOSGuid" : "AndroidGuid";
+  await AppCenter.start(
+      app_secret, [AppCenterAnalytics.id, AppCenterCrashes.id]);
 
   setupAllowedDeviceOrientation();
 
